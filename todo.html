@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid style1">
+        <div class="content-0 sea">
+            <h3>
+                TO-DO
+            </h3>
+            <div class="input-group mb-3 sea1">
+                <input type="text" onkeyup="search()" class="search_task form-control" id="search_task" placeholder="Search for tasks.." >
+                <button class="btn btn-secondary" ><i class="bi bi-search"></i></button>
+            </div>
+           
+             
+        </div><br>
+       
+        <div class="input-group mb-3 content-1">
+            <input type="text" name="ta" id="task" class="form-control" placeholder="Enter task name" onkeyup="search()">
+            <button class="btn btn-primary" onclick="addTask()" >ADD</button>
+        </div>
+
+        <div>
+            <ul id="list" style="display:flex; flex-direction: column; row-gap: 5px;">
+
+            </ul>
+        </div>   
+</body>
+</html>
